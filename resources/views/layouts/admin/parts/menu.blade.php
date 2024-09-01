@@ -73,15 +73,15 @@
                     data-feather="more-horizontal"></i>
             </li>
             <li
-                class="nav-link {{ Route::currentRouteName() == 'Project.indexs' || Route::currentRouteName() == 'Project.show' ? 'active' : '' }}">
-                <a class="d-flex align-items-center" href="{{ route('Project.index') }}">
+                class="nav-link {{ Route::currentRouteName() == 'carousel.indexs' || Route::currentRouteName() == 'carousel.show' ? 'active' : '' }}">
+                <a class="d-flex align-items-center" href="{{ route('carousel.index') }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="feather feather-user">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
-                    <span class="menu-item text-truncate" data-i18n="User">@lang('lang.Projects')</span>
+                    <span class="menu-item text-truncate" data-i18n="User">@lang('lang.carousels')</span>
                 </a>
             </li>
             <li
@@ -98,37 +98,65 @@
             </li>
 
             <li
-                class="nav-link {{ Route::currentRouteName() == 'ProjectContact.index' || Route::currentRouteName() == 'aboutus.show' ? 'active' : '' }}">
-                <a class="d-flex align-items-center" href="{{ route('ProjectContact.index') }}">
+                class="nav-link {{ Route::currentRouteName() == 'team.index' || Route::currentRouteName() == 'team.show' ? 'active' : '' }}">
+                <a class="d-flex align-items-center" href="{{ route('team.index') }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="feather feather-user">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
-                    <span class="menu-item text-truncate" data-i18n="User">@lang('lang.ProjectsContacts')</span>
+                    <span class="menu-item text-truncate" data-i18n="User">@lang('lang.Team')</span>
                 </a>
             </li>
-            <li class="nav-link {{ Route::currentRouteName() == 'Review.index' ? 'active' : '' }}">
-                <a class="d-flex align-items-center" href="{{ route('Review.index') }}">
+
+            <li
+                class="nav-link {{ Route::currentRouteName() == 'service.index' || Route::currentRouteName() == 'service.show' ? 'active' : '' }}">
+                <a class="d-flex align-items-center" href="{{ route('service.index') }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="feather feather-user">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
-                    <span class="menu-item text-truncate" data-i18n="User">@lang('lang.ProjectReview')</span>
+                    <span class="menu-item text-truncate" data-i18n="User">@lang('lang.Services')</span>
                 </a>
             </li>
-            <li class="nav-link {{ Route::currentRouteName() == 'GeneralReview.index' ? 'active' : '' }}">
-                <a class="d-flex align-items-center" href="{{ route('GeneralReview.index') }}">
+
+            <li
+                class="nav-link {{ Route::currentRouteName() == 'contactus.index' || Route::currentRouteName() == 'contactus.show' ? 'active' : '' }}">
+                <a class="d-flex align-items-center" href="{{ route('contactus.index') }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="feather feather-user">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
-                    <span class="menu-item text-truncate" data-i18n="User">@lang('lang.Review')</span>
+                    <span class="menu-item text-truncate" data-i18n="User">@lang('lang.ContactUs')</span>
+                </a>
+            </li>
+            <li
+                class="nav-link {{ Route::currentRouteName() == 'social_links.index' || Route::currentRouteName() == 'social_links.show' ? 'active' : '' }}">
+                <a class="d-flex align-items-center" href="{{ route('social_links.index') }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-user">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span class="menu-item text-truncate" data-i18n="User">@lang('lang.social_links')</span>
+                </a>
+            </li>
+            <li
+                class="nav-link {{ Route::currentRouteName() == 'userMessage.index' || Route::currentRouteName() == 'userMessage.show' ? 'active' : '' }}">
+                <a class="d-flex align-items-center" href="{{ route('userMessage.index') }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-user">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span class="menu-item text-truncate" data-i18n="User">@lang('lang.userMessage')</span>
                 </a>
             </li>
 
@@ -146,7 +174,7 @@
                     <span class="menu-title text-truncate" data-i18n="User">@lang('lang.Settings')</span>
                 </a>
                 <ul class="menu-content">
-                    <li
+                    {{-- <li
                         class="nav-link {{ Route::currentRouteName() == 'aboutus.index' || Route::currentRouteName() == 'aboutus.show' ? 'active' : '' }}">
                         <a class="d-flex align-items-center" href="{{ route('aboutus.index') }}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
@@ -156,87 +184,8 @@
                             </svg>
                             <span class="menu-item text-truncate" data-i18n="User">@lang('lang.AboutUs')</span>
                         </a>
-                    </li>
-                    <li
-                        class="nav-link {{ Route::currentRouteName() == 'Branch.index' || Route::currentRouteName() == 'BranchEmployee.create' || Route::currentRouteName() == 'Branch.create' ? 'active' : '' }}">
-                        <a class="d-flex align-items-center" href="{{ route('Branch.index') }}">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
-                                <circle cx="12" cy="12" r="10"></circle>
-                            </svg>
-                            <span class="menu-item text-truncate" data-i18n="User">@lang('lang.Branches')</span>
-                        </a>
-                    </li>
-                    <li
-                        class=" nav-link {{ Route::currentRouteName() == 'Slider.index' || Route::currentRouteName() == 'Slider.create' || Route::currentRouteName() == 'Slider.update' ? 'active' : '' }}">
-                        <a class="d-flex align-items-center" href="{{ route('Slider.index') }}">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
-                                <circle cx="12" cy="12" r="10"></circle>
-                            </svg>
-                            <span class="menu-item text-truncate" data-i18n="List">@lang('lang.LandingPage')</span></a>
-                    </li>
-                    <li class=" nav-link {{ Route::currentRouteName() == 'Blog.createFront' ? 'active' : '' }}"><a
-                            class="d-flex align-items-center" href="{{ route('Blog.createFront') }}">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
-                                <circle cx="12" cy="12" r="10"></circle>
-                            </svg>
-                            <span class="menu-item text-truncate" data-i18n="List">@lang('lang.Blog')</span></a>
-                    </li>
-                    <li
-                        class=" nav-link {{ Route::currentRouteName() == 'Type.index' || Route::currentRouteName() == 'Type.create' || Route::currentRouteName() == 'Type.update' ? 'active' : '' }}">
-                        <a class="d-flex align-items-center" href="{{ route('Type.index') }}">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
-                                <circle cx="12" cy="12" r="10"></circle>
-                            </svg>
-                            <span class="menu-item text-truncate" data-i18n="List">@lang('lang.ProjectType')</span></a>
-                    </li>
-                    <li
-                        class=" nav-link {{ Route::currentRouteName() == 'Infrastructure.index' || Route::currentRouteName() == 'Infrastructure.create' || Route::currentRouteName() == 'Infrastructure.update' ? 'active' : '' }}">
-                        <a class="d-flex align-items-center" href="{{ route('Infrastructure.index') }}">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
-                                <circle cx="12" cy="12" r="10"></circle>
-                            </svg>
-                            <span class="menu-item text-truncate" data-i18n="List">@lang('lang.Infrastructure')</span></a>
-                    </li>
-                    <li
-                        class=" nav-link {{ Route::currentRouteName() == 'Unit.index' || Route::currentRouteName() == 'Unit.create' || Route::currentRouteName() == 'Unit.update' ? 'active' : '' }}">
-                        <a class="d-flex align-items-center" href="{{ route('Unit.index') }}">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
-                                <circle cx="12" cy="12" r="10"></circle>
-                            </svg>
-                            <span class="menu-item text-truncate" data-i18n="List">@lang('lang.Units')</span></a>
-                    </li>
-                    <li
-                        class=" nav-link {{ Route::currentRouteName() == 'Element.index' || Route::currentRouteName() == 'Element.create' || Route::currentRouteName() == 'Element.update' ? 'active' : '' }}">
-                        <a class="d-flex align-items-center" href="{{ route('Element.index') }}">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
-                                <circle cx="12" cy="12" r="10"></circle>
-                            </svg>
-                            <span class="menu-item text-truncate" data-i18n="List">@lang('lang.UnitElements')</span></a>
-                    </li>
-                    <li
-                        class=" nav-link {{ Route::currentRouteName() == 'Philosophy.index' || Route::currentRouteName() == 'Philosophy.create' || Route::currentRouteName() == 'Philosophy.update' ? 'active' : '' }}">
-                        <a class="d-flex align-items-center" href="{{ route('Philosophy.index') }}">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
-                                <circle cx="12" cy="12" r="10"></circle>
-                            </svg>
-                            <span class="menu-item text-truncate" data-i18n="List">@lang('lang.OurPhilosophy')</span></a>
-                    </li>
+                    </li> --}}
+
 
 
                 </ul>

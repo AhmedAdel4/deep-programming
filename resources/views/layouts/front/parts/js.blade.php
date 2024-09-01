@@ -10,3 +10,25 @@
 
   <!-- Main JS File -->
   <script src="{{ asset('assets/js/main.js') }}"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const navLinks = document.querySelectorAll('#navmenu ul li a');
+          const footerLinks = document.querySelectorAll('footer ul li a'); // Select footer links
+
+          function handleNavigation(event) {
+              const sectionName = this.getAttribute('href');
+
+              // Check if the current route is not the home page
+              if (window.location.pathname !== "{{ route('homePage') }}") {
+                  event.preventDefault(); // Prevent default link behavior
+
+                  // Redirect to homePage route with the section hash
+                  window.location.href = "{{ route('homePage') }}" + sectionName;
+              }
+          }
+
+          // Attach event listeners to navigation and footer links
+          navLinks.forEach(link => link.addEventListener('click', handleNavigation));
+          footerLinks.forEach(link => link.addEventListener('click', handleNavigation));
+      });
+  </script>

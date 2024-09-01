@@ -25,7 +25,9 @@ Route::get('install', function() {
 Route::get('/admin', function () {
     return redirect(route('home'));
 });
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('homePage');
+Route::get('/about-details', [HomeController::class, 'aboutDetails'])->name('aboutDetails');
+Route::post('/userMessage', [HomeController::class, 'userMessage'])->name('userMessage');
 
 
 

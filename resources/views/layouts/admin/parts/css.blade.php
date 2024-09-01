@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
 
     <meta name="description"
-        content="RealEstates admin is super flexible, powerful, clean &amp; modern   admin   with unlimited possibilities.">
-    <meta name="keywords" content="admin  , RealEstates admin  , dashboard  , flat admin  ,   admin  , web app">
+        content="{{ env('APP_NAME') }} admin is super flexible, powerful, clean &amp; modern   admin   with unlimited possibilities.">
+    <meta name="keywords" content="admin  , {{ env('APP_NAME') }} admin  , dashboard  , flat admin  ,   admin  , web app">
     <meta name="author" content="PIXINVENT">
-    <title>Home - RealEstates - Admin </title>
+    <title>Home - {{ env('APP_NAME') }} - Admin </title>
     <link rel="icon" type="image/x-icon" href="{{ asset('app-assets/images/logo/Deep Programming logo.png') }}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
         rel="stylesheet">
